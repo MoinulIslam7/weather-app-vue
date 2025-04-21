@@ -19,7 +19,8 @@ export default new Vuex.Store({
         },
         SET_LOADING(state, value) {
             state.loading = value;
-        }
+        },
+
     },
     actions: {
         async fetchWeather({ commit, state }) {
