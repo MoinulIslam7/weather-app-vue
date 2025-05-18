@@ -28,6 +28,7 @@ export default {
             (position) => {
                 const coords = `${position.coords.latitude},${position.coords.longitude}`;
                 this.$store.dispatch('changeCity', coords);
+                console.log('Location fetched:', coords);
             },
             () => {
                 this.$store.dispatch('fetchWeather');
